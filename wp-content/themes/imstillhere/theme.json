@@ -76,9 +76,9 @@
       ],
       "gradients": [
         {
-          "gradient": "linear-gradient(0deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--contrast) 100%)",
-          "name": "Primary to Contrast",
-          "slug": "primary-contrast"
+          "gradient": "linear-gradient(0deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--charcoal) 100%)",
+          "name": "Primary to Charcoal",
+          "slug": "primary-charcoal"
         }
       ],
       "palette": [
@@ -88,9 +88,9 @@
           "slug": "base"
         },
         {
-          "color": "#000000",
-          "name": "Contrast",
-          "slug": "contrast"
+          "color": "#222222",
+          "name": "Charcoal",
+          "slug": "charcoal"
         },
         {
           "color": "#fab700",
@@ -98,9 +98,14 @@
           "slug": "primary"
         },
         {
-          "color": "#222222",
+          "color": "#6797cf",
           "name": "Secondary",
           "slug": "secondary"
+        },
+        {
+          "color": "#A1A298",
+          "name": "Concrete",
+          "slug": "concrete"
         },
         {
           "color": "#eeeeee",
@@ -152,6 +157,11 @@
     },
     "spacing": {
       "spacingSizes": [
+        {
+          "name": "Tiny",
+          "size": "6px",
+          "slug": "tiny"
+        },
         {
           "name": "xSmall",
           "size": "20px",
@@ -302,16 +312,16 @@
         },
         "spacing": {
           "padding": {
-            "bottom": "var:preset|spacing|x-small",
+            "bottom": "var:preset|spacing|tiny",
             "left": "var:preset|spacing|large",
             "right": "var:preset|spacing|large",
-            "top": "var:preset|spacing|x-small"
+            "top": "var:preset|spacing|tiny"
           }
         },
         "typography": {
           "fontSize": "var:preset|font-size|small",
           "fontStyle": "normal",
-          "fontWeight": "900"
+          "fontWeight": "400"
         },
         "variations": {
           "outline": {
@@ -338,7 +348,7 @@
       },
       "core/code": {
         "color": {
-          "background": "var(--wp--preset--color--contrast)",
+          "background": "var(--wp--preset--color--charcoal)",
           "text": "var(--wp--preset--color--base)"
         },
         "css": "& code {overflow-wrap: normal; overflow-x: scroll; tab-size: 4; white-space: pre !important;}",
@@ -436,7 +446,7 @@
       },
       "core/preformatted": {
         "color": {
-          "background": "var(--wp--preset--color--contrast)",
+          "background": "var(--wp--preset--color--charcoal)",
           "text": "var(--wp--preset--color--base)"
         },
         "css": "{overflow-wrap: normal; overflow-x: scroll; tab-size: 4; white-space: pre !important;}",
@@ -455,7 +465,7 @@
       },
       "core/pullquote": {
         "border": {
-          "color": "var(--wp--preset--color--contrast)",
+          "color": "var(--wp--preset--color--charcoal)",
           "style": "solid",
           "width": "1px"
         },
@@ -469,7 +479,7 @@
       },
       "core/quote": {
         "border": {
-          "color": "var(--wp--preset--color--contrast)",
+          "color": "var(--wp--preset--color--charcoal)",
           "style": "solid",
           "width": "1px"
         },
@@ -513,7 +523,7 @@
         }
       },
       "core/table": {
-        "css": "th {border-color: var(--wp--preset--color--contrast) !important;} & td {border-color: var(--wp--preset--color--contrast) !important;}",
+        "css": "th {border-color: var(--wp--preset--color--charcoal) !important;} & td {border-color: var(--wp--preset--color--charcoal) !important;}",
         "typography": {
           "fontSize": "var(--wp--preset--font-size--small)"
         }
@@ -531,7 +541,7 @@
     },
     "color": {
       "background": "var:preset|color|base",
-      "text": "var(--wp--preset--color--contrast)"
+      "text": "var(--wp--preset--color--charcoal)"
     },
     "css": ".current-menu-item{\ncolor: #fab700; }",
     "elements": {
@@ -545,16 +555,16 @@
         },
         "spacing": {
           "padding": {
-            "bottom": "15px",
+            "bottom": "10px",
             "left": "30px",
             "right": "30px",
-            "top": "15px"
+            "top": "10px"
           }
         },
         "typography": {
           "fontSize": "var:preset|font-size|small",
           "fontStyle": "normal",
-          "fontWeight": "700"
+          "fontWeight": "400"
         }
       },
       "caption": {
@@ -612,7 +622,7 @@
       },
       "link": {
         "color": {
-          "text": "var(--wp--preset--color--contrast)"
+          "text": "var(--wp--preset--color--charcoal)"
         }
       }
     },
