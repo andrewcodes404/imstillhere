@@ -1,0 +1,17 @@
+// @import '0-lib/reset';
+
+@import '1-base/mixins';
+@import '1-base/variables';
+// @import '1-base/layout';
+// @import '1-base/typography';
+@import '1-base/animation';
+
+@import '5-blocks/team-members';
+
+@import '6-vendor/gravity-forms';
+
+.wp-block-social-links .wp-social-link {
+  background-color: $yellow !important;
+  color: $charcoal !important;
+  font-size: 28px !important;
+}

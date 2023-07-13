@@ -1,0 +1,30 @@
+$break-mobile: 22.438em; // 359px
+$break-mobile-land: 32em; // 512px
+$break-tablet: 40.063em; // 641px
+$break-desktop: 50em; // 800px
+$break-desktop-mini: 55em; // 880px
+$break-desktop-med: 64.063em; // 1025px
+$break-mobile-nav: 68.125em; // 1090px
+$break-desktop-wide: 75em; // 1200px
+$break-desktop-wider: 83.75em; // 1340px
+$break-desktop-xl: 88em; // 1408px
+
+$black: #000;
+$white: #fff;
+$grey: #a1a298;
+$light-grey: #eeeeee;
+
+$yellow: #fab700;
+$charcoal: #222222;
+$light-blue: #6797cf;
+$secondary: $light-blue;
+$concrete: $grey;
+$neutral: $light-grey;
+
+$space-05: var(--wp--preset--spacing--05);
+$space-10: var(--wp--preset--spacing--10);
+$space-20: var(--wp--preset--spacing--20);
+$space-30: var(--wp--preset--spacing--30);
+$space-40: var(--wp--preset--spacing--40);
+$space-50: var(--wp--preset--spacing--50);
+$space-60: var(--wp--preset--spacing--60);

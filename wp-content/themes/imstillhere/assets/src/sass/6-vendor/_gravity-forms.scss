@@ -1,0 +1,269 @@
+// https://docs.gravityforms.com/changing-font-sizes/
+
+// body .gform_wrapper .gform_heading {}
+
+body .gform_wrapper .gform_body {
+  max-width: 800px !important;
+  padding-top: 30px;
+}
+
+body .gform_wrapper .gform_body .gfield {
+  margin-bottom: 16px;
+}
+
+body .gform_wrapper .gform_body input {
+  height: 52px;
+  padding: 16px 0 16px 16px;
+  border: 1px solid $yellow;
+  border-radius: 4px;
+  font-size: var(--wp--preset--font-size--medium);
+}
+
+body .gform_wrapper .gform_body .gfield_label {
+  margin-bottom: 16px;
+  font-size: var(--wp--preset--font-size--medium);
+  font-weight: normal;
+  line-height: 1;
+}
+
+body .gform_wrapper .gform_body .gform_fields .gfield .ginput_container_textarea {
+  // padding: 16px 16 16px 16px;
+  border: 1px solid $yellow;
+  border-radius: 4px;
+  font-size: var(--wp--preset--font-size--medium);
+
+  .gfield_description {
+    padding: 5px 10px !important;
+  }
+}
+
+body .gform_wrapper .gform_body .gfield_required {
+  color: $charcoal;
+}
+
+// body .gform_wrapper .gform_body .gform_fields .gfield_html {}
+
+// Checkboxes
+// https://docs.gravityforms.com/checkboxes-field/
+
+// body .gform_wrapper .gform_body .gform_fields .gfield .gfield_checkbox {}
+
+body .gform_wrapper .gform_body .gform_fields .gfield .gfield_checkbox .gform-field-label {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+body .gform_wrapper .gform_body .gform_fields .gfield .gfield_checkbox input[type='checkbox'] {
+  position: relative;
+
+  height: 20px;
+  border: none;
+
+  appearance: none;
+  &:disabled {
+    & + label {
+      text-decoration: line-through;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    z-index: 1;
+    width: 22px;
+    height: 22px;
+    border: 1px solid $yellow;
+    border-radius: 3px;
+    transition: 0.4s;
+    cursor: pointer;
+    content: '';
+  }
+
+  &:before {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/tick--white.svg');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% 70%;
+    border: 1px solid $yellow;
+    border-radius: 3px;
+    transition: 0.4s;
+    opacity: 0;
+    cursor: pointer;
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+      border: 1px solid $yellow;
+      box-shadow: 0px 2px 9px 0 #004a4566;
+      transition: 0.4s;
+    }
+  }
+
+  &:checked {
+    &:after {
+      background-color: $yellow;
+      border: 1px solid $yellow;
+      transition: 0.4s;
+    }
+
+    &:before {
+      transition: 0.4s;
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+      &:after {
+        border: 1px solid $yellow;
+        box-shadow: 0px 2px 9px 0 #004a4566;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  /* CSS specific to iOS devices */
+  // @supports (-webkit-touch-callout: none) {
+  //   position: static;
+  //   padding: 10px;
+  //   background: none;
+  //   background-image: none;
+  //   outline: none;
+  //   text-shadow: none;
+  //   opacity: 1;
+  //   appearance: checkbox;
+  //   border-image: none;
+  //   filter: none;
+
+  //   &:after,
+  //   &:before {
+  //     content: none;
+  //   }
+  // }
+}
+
+// Radios
+// https://docs.gravityforms.com/radio-buttons-field/
+
+// body .gform_wrapper .gform_body .gform_fields .gfield .gfield_radio {}
+
+body .gform_wrapper .gform_body .gform_fields .gfield .gfield_radio .gform-field-label {
+  margin-bottom: 10px;
+  padding-left: 16px;
+
+  line-height: 1;
+  cursor: pointer;
+}
+
+body .gform_wrapper .gform_body .gform_fields .gfield .gfield_radio input[type='radio'] {
+  position: relative;
+  height: 0px;
+  border: none;
+
+  cursor: pointer;
+  appearance: none;
+
+  &:disabled {
+    & + label {
+      text-decoration: line-through;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid $yellow;
+    border-radius: 24px;
+    transition: 0.4s;
+    cursor: pointer;
+    content: '';
+  }
+
+  &:before {
+    transition: 0.4s;
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+      border: 1px solid $yellow;
+      box-shadow: 0px 2px 9px 0 #004a4566;
+      transition: 0.4s;
+    }
+  }
+
+  &:checked {
+    &:after {
+      background-color: $white;
+      border: 2px solid $yellow;
+      transition: 0.4s;
+    }
+
+    &:before {
+      position: absolute;
+      bottom: 16px;
+      left: 6px;
+      z-index: 2;
+      width: 12px;
+      height: 12px;
+      background-color: $yellow;
+      border-radius: 6px;
+      transition: 0.4s;
+      cursor: pointer;
+      content: '';
+    }
+
+    &:hover,
+    &:focus {
+      &:after {
+        border: 2px solid $yellow;
+        box-shadow: 0px 2px 9px 0 #004a4566;
+      }
+    }
+  }
+
+  /* CSS specific to iOS devices */
+  // @supports (-webkit-touch-callout: none) {
+  //   position: static;
+  //   appearance: radio;
+
+  //   &:before,
+  //   &:after {
+  //     content: none;
+  //   }
+
+  // }
+}
+
+// Submit
+// https://docs.gravityforms.com/submit-button-css-selectors/
+body .gform_wrapper .gform_footer input[type='submit'] {
+  padding: 10px;
+  padding: 16px 50px;
+  background-color: $yellow;
+  border-radius: 6px;
+  color: $white;
+  @include font-size(18, 18);
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.4s;
+  border: 1px solid $yellow;
+  &:hover {
+    background-color: $light-grey;
+    color: $yellow;
+  }
+}

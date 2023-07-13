@@ -1,0 +1,30 @@
+/* the post title */
+.edit-post-visual-editor__post-title-wrapper{
+
+  padding: 10px;
+  background-color: lightgrey;
+  margin-top: 0 !important;
+  margin-bottom: 10px;
+}
+
+.edit-post-visual-editor__post-title-wrapper h1{
+  font-size: 20px;
+}
+
+.edit-post-visual-editor__post-title-wrapper h1::before{
+  content: "Post title: ";
+  font-weight: 400;
+}
+
+
+
+/* acf block - team members */
+[data-type="acf/team"] {
+
+width: 100% !important;
+max-width: 1200px !important;
+}
+
+
+
+
