@@ -32,8 +32,14 @@ body .gform_wrapper .gform_body .gform_fields .gfield .ginput_container_textarea
   border-radius: 4px;
   font-size: var(--wp--preset--font-size--medium);
 
+  textarea {
+    margin-bottom: -10px;
+  }
+
   .gfield_description {
     padding: 5px 10px !important;
+    background-color: #fff;
+    margin-top: 0;
   }
 }
 
@@ -266,4 +272,13 @@ body .gform_wrapper .gform_footer input[type='submit'] {
     background-color: $light-grey;
     color: $yellow;
   }
+}
+
+// custom ccs for different forms
+// add these classes in gravity -> {{formname}} --> settings --> add css
+
+.ish-form--contact_wrapper {
+  background-color: rgba($charcoal, 0.7);
+  color: $white;
+  padding: 0 $space-60;
 }

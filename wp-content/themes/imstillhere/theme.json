@@ -89,6 +89,11 @@
         },
         {
           "color": "#222222",
+          "name": "Contrast",
+          "slug": "contrast"
+        },
+        {
+          "color": "#222222",
           "name": "Charcoal",
           "slug": "charcoal"
         },
@@ -307,6 +312,7 @@
   "styles": {
     "blocks": {
       "core/button": {
+        "css": ".wp-block-button__link{white-space: nowrap}",
         "border": {
           "radius": "8px"
         },
@@ -464,28 +470,24 @@
         }
       },
       "core/pullquote": {
-        "border": {
-          "color": "var(--wp--preset--color--charcoal)",
-          "style": "solid",
-          "width": "1px"
-        },
         "spacing": {
           "padding": "var(--wp--custom--spacing--gap)"
         },
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--medium)",
-          "lineHeight": "var(--wp--custom--line-height--medium)"
+          "fontSize": "var(--wp--preset--font-size--x-large)",
+          "lineHeight": "var(--wp--custom--line-height--medium)",
+          "fontWeight": "700"
         }
       },
       "core/quote": {
-        "border": {
-          "color": "var(--wp--preset--color--charcoal)",
-          "style": "solid",
-          "width": "1px"
-        },
         "css": "& p {margin: 0;}",
         "spacing": {
           "padding": "var(--wp--custom--spacing--gap)"
+        },
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--x-large)",
+          "lineHeight": "var(--wp--custom--line-height--medium)",
+          "fontWeight": "700"
         }
       },
       "core/separator": {
@@ -571,8 +573,18 @@
         "spacing": {
           "margin": {
             "bottom": "0px",
-            "top": "10px"
+            "top": "0px"
+          },
+          "padding": {
+            "bottom": "10px",
+            "top": "10px",
+            "right": "10px",
+            "left": "10px"
           }
+        },
+        "color": {
+          "background": "var(--wp--preset--color--neutral)",
+          "text": "var(--wp--preset--color--charcoal)"
         },
         "typography": {
           "fontSize": "var(--wp--preset--font-size--small)"

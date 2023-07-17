@@ -12,7 +12,7 @@ add_action('wp_enqueue_scripts', 'ish_enqueue_js');
 //Stylesheets
 function ish_enqueue_styles()
 {
-  ///fonts
+  ///font
   wp_enqueue_style('rt-gfonts-css', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
   // internal style sheet
   wp_enqueue_style('rt-main-css', get_template_directory_uri() . '/assets/dist/main.min.css', array(), filemtime(get_template_directory() . '/assets/dist/main.min.css'), false);
