@@ -316,6 +316,10 @@
         "border": {
           "radius": "8px"
         },
+        "color": {
+          "background": "var(--wp--preset--color--primary)",
+          "text": "var(--wp--preset--color--charcoal)"
+        },
         "spacing": {
           "padding": {
             "bottom": "var:preset|spacing|tiny",
@@ -338,10 +342,10 @@
             },
             "spacing": {
               "padding": {
-                "bottom": "14px",
-                "left": "29px",
-                "right": "29px",
-                "top": "14px"
+                "bottom": "var:preset|spacing|tiny",
+                "left": "var:preset|spacing|large",
+                "right": "var:preset|spacing|large",
+                "top": "var:preset|spacing|tiny"
               }
             }
           }
